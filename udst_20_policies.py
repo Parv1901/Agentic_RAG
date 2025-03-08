@@ -172,15 +172,16 @@ st.markdown("""
             text-decoration: none;
             display: inline-block;
         }
+        /* Chatbot Avatar Styling - Smaller & Aligned Right */
         .chat-avatar {
             display: block;
-            margin: 0 auto;
-            width: 100px;
-            height: 100px;
+            width: 70px;  /* 🔹 Smaller Size */
+            height: 70px;  
             border-radius: 50%;
-            margin-bottom: 10px;
             border: 3px solid white;
             box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.2);
+            float: right; /* 🔹 Move to the Right */
+            margin-right: 10px;
         }
 
     </style>
@@ -189,12 +190,15 @@ st.markdown("""
 st.markdown("<div class='navbar'>RAG CHATBOT - 20 UDST POLICIES</div>", unsafe_allow_html=True)
 
 st.markdown("<div class='policy-container'>" + "".join([f"<a href='{url}' class='policy-button'>{policy}</a>" for policy, url in policies.items()]) + "</div>", unsafe_allow_html=True)
-st.image(
-    "https://cdn-icons-png.flaticon.com/512/194/194938.png", 
-    width=100, 
-    caption="Parvathy's AI Assistant", 
-    use_column_width=False
+st.markdown(
+    """
+    <div style="text-align: right;">
+        <img class='chat-avatar' src="https://cdn-icons-png.flaticon.com/512/194/194938.png">
+    </div>
+    """,
+    unsafe_allow_html=True
 )
+
 
 st.write("Hey there! This is Parvathy’s Chatbot, your friendly assistant here to help you navigate UDST policies with ease.  Whether you're wondering about graduation requirements, admissions, scholarships, or any other policy, I’ve got your back! Just type your question, and I'll not only classify the intent but also fetch the most relevant policy details for you. ")
 
