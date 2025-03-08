@@ -210,7 +210,7 @@ st.markdown(
 )
 
 # User Query Input
-user_query = st.text_area("Enter your question:", placeholder="E.g., What is the graduation policy at UDST?")
+user_query = st.text_area("Enter your question:", placeholder="Question")
 
 # Submit Button
 if st.button("Get Answer"):
