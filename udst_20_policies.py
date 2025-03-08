@@ -145,7 +145,7 @@ policies = {
 st.markdown("""
     <style>
         .navbar {
-            background-color: #10568F;
+            background-color: #b5deff;
             padding: 20px;
             text-align: center;
             font-size: 28px;
@@ -175,11 +175,11 @@ st.markdown("""
     </style>
 """, unsafe_allow_html=True)
 
-st.markdown("<div class='navbar'>UDST Policy Chatbot</div>", unsafe_allow_html=True)
+st.markdown("<div class='navbar'>RAG CHATBOT - 20 UDST POLICIES</div>", unsafe_allow_html=True)
 
 st.markdown("<div class='policy-container'>" + "".join([f"<a href='{url}' class='policy-button'>{policy}</a>" for policy, url in policies.items()]) + "</div>", unsafe_allow_html=True)
 
-st.write("Ask any question about UDST policies and get instant responses!")
+st.write("The chatbot answers any questions about UDST policies!")
 
 # User Query Input
 user_query = st.text_area("Enter your question:", placeholder="E.g., What is the graduation policy at UDST?")
