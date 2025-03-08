@@ -172,16 +172,22 @@ st.markdown("""
             text-decoration: none;
             display: inline-block;
         }
-        /* Chatbot Avatar Styling - Smaller & Aligned Right */
+         /* Chatbot Avatar Styling - Medium Size & Centered */
         .chat-avatar {
             display: block;
-            width: 70px;  /* 🔹 Smaller Size */
-            height: 70px;  
+            width: 85px;  /* 🔹 Medium Size */
+            height: 85px;  
             border-radius: 50%;
             border: 3px solid white;
             box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.2);
-            float: right; /* 🔹 Move to the Right */
-            margin-right: 10px;
+            margin: auto; /* 🔹 Center Alignment */
+            margin-bottom: 10px;
+        }
+        /* Center the chat intro */
+        .chat-intro {
+            text-align: center;
+            font-size: 18px;
+            margin-top: 10px;
         }
 
     </style>
@@ -190,17 +196,18 @@ st.markdown("""
 st.markdown("<div class='navbar'>RAG CHATBOT - 20 UDST POLICIES</div>", unsafe_allow_html=True)
 
 st.markdown("<div class='policy-container'>" + "".join([f"<a href='{url}' class='policy-button'>{policy}</a>" for policy, url in policies.items()]) + "</div>", unsafe_allow_html=True)
+
 st.markdown(
     """
-    <div style="text-align: right;">
+    <div style="text-align: center;">
         <img class='chat-avatar' src="https://cdn-icons-png.flaticon.com/512/194/194938.png">
+        <p class='chat-intro'><strong>Hey there! This is Parvathy’s Chatbot, your friendly assistant here to help you navigate UDST policies with ease. 💡</strong></p>
+        <p class='chat-intro'>Whether you're wondering about <strong>graduation requirements, admissions, scholarships</strong>, or any other policy, I’ve got your back! 🤖</p>
+        <p class='chat-intro'>Just type your question below, and I'll not only classify the intent but also fetch the <strong>most relevant policy details</strong> for you. 🚀</p>
     </div>
     """,
     unsafe_allow_html=True
 )
-
-
-st.write("Hey there! This is Parvathy’s Chatbot, your friendly assistant here to help you navigate UDST policies with ease.  Whether you're wondering about graduation requirements, admissions, scholarships, or any other policy, I’ve got your back! Just type your question, and I'll not only classify the intent but also fetch the most relevant policy details for you. ")
 
 # User Query Input
 user_query = st.text_area("Enter your question:", placeholder="E.g., What is the graduation policy at UDST?")
