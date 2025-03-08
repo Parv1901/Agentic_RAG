@@ -179,7 +179,7 @@ st.markdown("<div class='navbar'>RAG CHATBOT - 20 UDST POLICIES</div>", unsafe_a
 
 st.markdown("<div class='policy-container'>" + "".join([f"<a href='{url}' class='policy-button'>{policy}</a>" for policy, url in policies.items()]) + "</div>", unsafe_allow_html=True)
 
-st.write("The chatbot answers any questions about UDST policies!")
+st.write("Hey there! This is Parvathy’s Chatbot, your friendly assistant here to help you navigate UDST policies with ease.  Whether you're wondering about graduation requirements, admissions, scholarships, or any other policy, I’ve got your back! Just type your question, and I'll not only classify the intent but also fetch the most relevant policy details for you. ")
 
 # User Query Input
 user_query = st.text_area("Enter your question:", placeholder="E.g., What is the graduation policy at UDST?")
