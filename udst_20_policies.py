@@ -175,8 +175,8 @@ st.markdown("""
          /* Chatbot Avatar Styling - Medium Size & Centered */
         .chat-avatar {
             display: block;
-            width: 85px;  /* 🔹 Medium Size */
-            height: 85px;  
+            width: 150px;  /* 🔹 Medium Size */
+            height: 150px;  
             border-radius: 50%;
             border: 3px solid white;
             box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.2);
