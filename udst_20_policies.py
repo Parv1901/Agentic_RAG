@@ -175,8 +175,8 @@ st.markdown("""
          /* Chatbot Avatar Styling - Medium Size & Centered */
         .chat-avatar {
             display: block;
-            width: 150px;  /* 🔹 Medium Size */
-            height: 150px;  
+            width: 250px;  /* 🔹 Medium Size */
+            height: 250px;  
             border-radius: 50%;
             border: 3px solid white;
             box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.2);
@@ -201,9 +201,9 @@ st.markdown(
     """
     <div style="text-align: center;">
         <img class='chat-avatar' src="https://cdn-icons-png.flaticon.com/512/194/194938.png">
-        <p class='chat-intro'><strong>Hey there! This is Parvathy’s Chatbot, your friendly assistant here to help you navigate UDST policies with ease. 💡</strong></p>
-        <p class='chat-intro'>Whether you're wondering about <strong>graduation requirements, admissions, scholarships</strong>, or any other policy, I’ve got your back! 🤖</p>
-        <p class='chat-intro'>Just type your question below, and I'll not only classify the intent but also fetch the <strong>most relevant policy details</strong> for you. 🚀</p>
+        <p class='chat-intro'><strong>Hey there! This is Parvathy’s Chatbot, your friendly assistant here to help you navigate UDST policies with ease. </strong></p>
+        <p class='chat-intro'>Whether you're wondering about <strong>graduation requirements, admissions, scholarships</strong>, or any other policy, I’ve got your back! </p>
+        <p class='chat-intro'>Just type your question below, and I'll not only classify the intent but also fetch the <strong>most relevant policy details</strong> for you. </p>
     </div>
     """,
     unsafe_allow_html=True
